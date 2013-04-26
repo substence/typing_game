@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<application xmlns="http://ns.adobe.com/air/application/3.7">
+
+	<id>com.nicotroia.typinggame</id>
+	<versionNumber>0.0.1</versionNumber>
+	<supportedProfiles>mobileDevice desktop</supportedProfiles>
+	<filename>Typing Game</filename>
+	
+	<name>Typing Game</name>
+	<description></description>
+	<copyright></copyright>
+
+	<initialWindow>
+		<content>typing_game.swf</content>
+		<aspectRatio>portrait</aspectRatio>
+		<autoOrients>false</autoOrients>
+        <renderMode>direct</renderMode>
+        <fullScreen>false</fullScreen>
+        <visible>true</visible>
+        <requestedDisplayResolution>high</requestedDisplayResolution>
+	</initialWindow>
+	
+	<icon>
+		<!-- android -->
+		<image36x36>assets/icons/android/icon_36.png</image36x36>
+		<image48x48>assets/icons/android/icon_48.png</image48x48>
+		<image72x72>assets/icons/android/icon_72.png</image72x72>
+		
+		<!-- ios  
+		<image29x29>assets/icons/ios/icon_29.png</image29x29>
+		<image48x48>assets/icons/ios/icon_48.png</image48x48>
+		<image50x50>assets/icons/ios/icon_50.png</image50x50>
+		<image57x57>assets/icons/ios/icon_57.png</image57x57>
+		<image58x58>assets/icons/ios/icon_58.png</image58x58>
+		<image72x72>assets/icons/ios/icon_72.png</image72x72>
+		<image100x100>assets/icons/ios/icon_100.png</image100x100>
+		<image114x114>assets/icons/ios/icon_114.png</image114x114>
+		<image144x144>assets/icons/ios/icon_144.png</image144x144>
+		<image512x512>assets/icons/ios/icon_512.png</image512x512>
+		<image1024x1024>assets/icons/ios/icon_1024.png</image1024x1024>
+		-->
+	</icon>
+	
+	<android> 
+    	<manifestAdditions> 
+        	<![CDATA[ 
+	            <manifest> 
+	            	<uses-sdk android:minSdkVersion="8"/>
+	                <uses-permission android:name="android.permission.INTERNET" /> 
+	                <uses-feature android:name="android.hardware.touchscreen.multitouch" />
+	            </manifest> 
+        	]]> 
+    	</manifestAdditions> 
+	</android>
+	
+	<iPhone>
+		<requestedDisplayResolution>high</requestedDisplayResolution>
+		<InfoAdditions>
+			<![CDATA[
+				<key>UIStatusBarStyle</key> 
+    			<string>UIStatusBarStyleBlackOpaque</string> 
+				<key>UIDeviceFamily</key> 
+				<array> 
+				    <string>1</string> 
+				    <string>2</string> 
+				</array>
+				<key>UIPrerenderedIcon</key> 
+        		<true/> 
+			]]>
+		</InfoAdditions>
+	</iPhone>
+
+</application>
